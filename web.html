@@ -1,0 +1,374 @@
+<html>
+<head>
+<title>
+Exponent - Finance Demo - A Modern Multi-Purpose Business...
+</title>
+<style>
+      div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}
+      body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: white;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: green;
+  color: white;
+  transform: rotateY(180deg);
+}
+      .button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+      }
+      .slider {        
+         width: 100%;
+        height: 529px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 4500px;
+        background-color: pink;
+        height: 529px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -1420px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -2900px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: grey;
+      }
+      .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+    </style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+</head>
+<body>
+<section>
+
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+<div class="slide" style="filter: brightness(90%);">
+<img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/09/Home-Hero-IMG.jpg" width="1420" height="529"/>
+<img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/12/exp-logo-dark.svg" class="logo-img default-logo" style="position: absolute;top: 6px;left: 570px;color:red;"/>
+</div>
+<div class="slide" style="filter: brightness(90%);">
+<img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/11/Service-6.jpg" class="slide" width="1420" height="529"/>
+<img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/12/exp-logo-dark.svg" class="logo-img default-logo" style="position: absolute;top: 6px;left: 570px;color:red;"/>
+</div>
+<div class="slide" style="filter: brightness(90%);">
+<img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/11/Service-2.jpg" class="slide" width="1420" height="529"/>
+<img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/12/exp-logo-dark.svg" class="logo-img default-logo" style="position: absolute;top: 6px;left: 570px;color:red;"/>
+</div>
+   </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+</section>
+<section>
+	<div style="width:50%;float : left ;">
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<h2 style="font-size:200%">Some of the investment <br>services we offer</h2>
+<h3 style="color: grey">Over 30 high quality professionally designed pre-built<br>website concepts to choose from. Build your website<br>using a fully visual interface, using our revolutionary page<br>& header builder.</h3>
+<button class="button">VIEW MORE</button>
+	</div>
+	<div style="width:25%;float : left ;padding-top: 200px">
+	<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://cdn0.iconfinder.com/data/icons/files-documents-outline/512/oYPS__file_document_dollar_money_currency_sheet_paper_page-512.png" width="50" height="50">
+      <h2>Equity Markets</h2>
+      <h4>Invest and trade in companies you<br> believe in directly.</h4>
+    </div>
+    <div class="flip-box-back">
+      <h2>Equity Markets</h2>
+      <h4>Invest and trade in companies you<br> believe in directly.</h4>
+      <img src="https://www.clipartmax.com/png/middle/255-2553507_right-arrow-icon-right-arrow-sign-vector.png" width="50" height="50">
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM_05WYu-H0NWoB8sOxItHf5ZZUAZynQgF6A&usqp=CAU" width="50" height="50">
+      <h2>Insurance</h2>
+      <h4>Tax Saving coupled with insurance<br>for the risk averse.</h4>
+    </div>
+    <div class="flip-box-back">
+      <h2>Insurance</h2>
+      <h4>Tax Saving coupled with insurance<br>for the risk averse.</h4>
+      <img src="https://www.clipartmax.com/png/middle/255-2553507_right-arrow-icon-right-arrow-sign-vector.png" width="50" height="50">
+    </div>
+  </div>
+</div>	
+	</div>
+	<div style="width:25%;float : left ;padding-top: 200px">
+	<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="
+https://thumbs.dreamstime.com/b/stack-paper-thin-line-icon-files-vector-illustration-isolated-white-pile-documents-outline-style-design-designed-web-150796972.jpg" width="50" height="50">
+      <h2>Mutual Funds</h2>
+      <h4>Let experts handle the work of<br>making you rich.</h4>
+    </div>
+    <div class="flip-box-back">
+      <h2>Mutual Funds</h2>
+      <h4>Let experts handle the work of<br>making you rich.</h4>
+      <img src="https://www.clipartmax.com/png/middle/255-2553507_right-arrow-icon-right-arrow-sign-vector.png" width="50" height="50">
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT19stIzpoOhSFmllcGyURJZ93pNHouEZ1_yA&usqp=CAU" width="50" height="50">
+      <h2>Fixed Deposits</h2>
+      <h4>Your money is safe and sound and<br>you get guarenteed returns.</h4>
+    </div>
+    <div class="flip-box-back">
+      <h2>Fixed Deposits</h2>
+     <h4>Your money is safe and sound and<br>you get guarenteed returns.</h4>
+      <img src="https://www.clipartmax.com/png/middle/255-2553507_right-arrow-icon-right-arrow-sign-vector.png" width="50" height="50">
+    </div>
+  </div>
+</div>	
+	</div>
+</section >
+<section style="padding-top: 200px;">
+	<div class="polaroid" style="width:25%;
+margin : 0;
+float : left ;">
+  <img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/09/Home-IMG-2.jpg" width="250" height="200">
+  <div class="container">
+    <h3><b>I want to <span style="color: green">borrow</span> some money</b></h3>
+      <a href="#">Learn More</a>
+  </div>
+</div>
+	<div class="polaroid" style="width:25%;
+margin : 0;
+float : left ;">
+  <img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/09/Home-IMG-3.jpg" width="250" height="200">
+  <div class="container">
+    <h3><b>I want to <span style="color: green">borrow</span> some money</b></h3>
+      <a href="#">Learn More</a>
+  </div>
+</div>
+<div>
+	<h1 style="width:50%;
+margin : 0;
+float : left ;padding-top: 120px;">&nbsp;&nbsp;&nbsp;&nbsp;Its time to make your money work for you</h1>
+<h5 style="width:50%;margin : 0;float : left ;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Over 30 high quality professionally designed pre-built<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;website concepts to choose from. Build your website<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;using a fully visual interface, using our revolutionary page<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;& header builder.</h5>
+<br>
+<button style="border: 2px solid green;background-color: white;color: black;padding: 14px 28px;font-size: 16px;margin-left: 30px;margin-top: 40px;cursor: pointer;">VIEW MORE</button>
+</div>
+</section>
+<section>
+	<div style="width:50%;margin : 0;float : left ;">
+		<h1 style="font-size: 50px;"><br>A big part of financial<br>freedom is having your heart<br>and mind free from worry<br>about the what-ifs of life.</h1>
+	<h6>Tony Stark,<br>STARK INDUSTRIES</h6>
+	</div>
+	<div style="width:50%;margin : 0;float : left ;">
+		<img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/09/Home-IMG-4.jpg" width="650" height="1000">
+	</div>
+</section>
+<section>
+	<br>
+	<br>
+	<div style="text-align: center;padding-top: 100px">
+		<div></div>
+		<h6>HOW IT WORKS</h6><br>
+		<h2>A Simple Process</h2><br>
+		<div style="width:25%;margin : 0;float : left ;">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHqEGIoPCij3YymxfY-3E_mP67WQkzDCoflg&usqp=CAU" width="64" height="64"><br>
+		<h4>Sign up</h4>
+		<h5>Wireframing has its pros and cons as it<br>the crutial part of the design stage.</h5>
+		</div>
+		<div style="width:15%;margin : 0;float : left ;">	
+		<hr style="width:70%">
+	</div>
+	<div style="width:15%;margin : 0;float : left ;">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQifpwiGKvtm2jPm91DBjpgp-nm9TQolsraQg&usqp=CAU"width="64" height="64"><br>
+		<h4>Pick your investment</h4>
+		<h5>Total damage has been caused by the<br>civilians around the new apple store.</h5>
+		</div>
+		<div style="width:15%;margin : 0;float : left ;">	
+		<hr style="width:70%">
+	</div>
+	<div style="width:25%;margin : 0;float : left ;">
+	 	<img src="https://c8.alamy.com/comp/2AXJ02Y/dollar-paper-icon-vector-isolated-contour-symbol-illustration-2AXJ02Y.jpg"width="64" height="64"><br>
+		<h4>Watch your wealth grow</h4>
+		<h5>Total damage has been caused by the<br>civilians around the new apple store.</h5>
+	 </div>
+	 </div>
+</section>
+<section>
+	<img src="https://i.ibb.co/3Nh5sdW/1-pic.jpg">
+</section>
+<section>
+	<div>
+	<div style="width:30%;margin : 0;float : left ; margin: 90px">
+		<h1>We will let our stats do<br>the talking</h1>
+	</div>
+	<div style="width:50%;margin : 0;float : left ; padding-top: 150px">
+		<div style="width:50%;margin : 0;float : left ;">
+			<h5>The best part of being a part of<br>this community is about working<br>together.</h5>
+		</div>
+		<div style="width:50%;margin : 0;float : left ;">
+			<h5>The best part of being a part of<br>this community is about working<br>together.</h5>
+		</div>
+	</div>
+</div>
+</section>
+<section>
+	<img src="https://i.ibb.co/g631y9z/2-pic.jpg" width="1500" height="1000">
+</section>
+<section style="text-align: center;">
+	<div>
+		<h1>Recent News</h1>
+		<h6>Checkout our recent yet amazing blog and get your<br>knowledge enlightened</h6>
+	</div>
+	<div style="padding-left: 100px">
+		<div class="card" style="width:30%;margin : 0;float : left ;">
+  <img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/08/Blog-17-Image-2-768x628.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+<div class="card" style="width:30%;margin : 0;float : left ;">
+  <img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/11/Service-3-768x550.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+<div class="card" style="width:30%;margin : 0;float : left ;">
+  <img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/08/exp-blog-23-768x512.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+<button style="border: 2px solid green;background-color: white; color: black;padding: 14px 28px;font-size: 16px;margin-left: 30px;margin-top: 40px;cursor: pointer;">VIEW ALL ARTICLES</button>
+	</div>
+</section>
+<section>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.660081175!2d77.35073622180906!3d12.954517007995705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1604944799105!5m2!1sen!2sin" width="900" height="720" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</section>
+<section>
+	<div style="width:50%;margin : 0;float : left ;">
+	<hr style="width:100%;text-align:left;margin-left:200px"><br><br><br><br>
+	<img src="https://exponentwptheme.com/finance/wp-content/uploads/sites/19/2018/12/exp-logo-dark.svg" width="120" height="84">
+    <h6>Copyright © 2019 Brand Exponents.<br>All Rights Reserved</h6><br>
+    <img src="data:image/png;base64,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" width="20" height="20">
+    <img src="https://img.icons8.com/ios/452/instagram-new.png" width="20" height="20">
+    <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-154-459182.png" width="20" height="20">
+    <img src="https://cdn.iconscout.com/icon/free/png-256/skype-210-884526.png" width="20" height="20">
+    <img src="https://cdn.iconscout.com/icon/free/png-256/twitter-1722376-1466162.png" width="20" height="20">
+	</div>
+    <div  style="width:30%;margin : 0;float : left ;border-left: 6px solid grey;height: 300px;"></div>
+<div>
+	<h4>Services</h4>
+</div>
+</section>
+</body>
